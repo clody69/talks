@@ -273,15 +273,16 @@ a:focus {
 	padding-top: 100px;
 }
 
-#webevolution {
-	width: 1400px;
-	padding-bottom: 400px;
+#webevolution-1 {
+	width: 2000px;
+	padding-bottom: 750px;
+	margin-left: 400px;
     background-image: url('../imgs/evolution-web.png');	
     background-position: top left;
     background-repeat: no-repeat;
 }
 
-.impress-on-webevolution-1 #webevolution, .impress-on-webevolution-2 #webevolution
+.impress-on-webevolution #webevolution-1, .impress-on-webevolution-2 #webevolution-1
 {
 	opacity: 1;	
 }
