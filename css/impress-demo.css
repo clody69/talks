@@ -433,6 +433,23 @@ a:focus {
 	background-size: 600px 600px;
 }
 
+#html5arch-1 {
+	width: 2300px;
+	padding-top: 220px;
+	padding-bottom: 1000px;
+	margin-left: 350px;
+    background-image: url('../imgs/html5_arch.png');	
+    background-position: bottom left;
+    background-repeat: no-repeat;
+	background-size: 2300px;
+}
+
+.impress-on-html5arch #html5arch-1, .impress-on-html5arch-2 #html5arch-1, .impress-on-html5arch-3 #html5arch-1
+{
+	opacity: 1;	
+}
+
+
 #jquerycode {
 	width: 1300px;
 }
