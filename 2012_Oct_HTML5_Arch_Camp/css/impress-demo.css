@@ -1033,6 +1033,7 @@ text-transform: uppercase;
     for you.
 */
 
+/* For Printing 
 .fallback-message { display: none; }
 @page land {size: landscape;}
 .step { height: 1000px !important; width: 1500px; border: 0; opacity: 1 !important; page-break-inside: avoid; page-break-after: always; position: relative !important; -webkit-transform: none !important;  -moz-transform: none !important; }
@@ -1049,3 +1050,5 @@ body { height: auto !important; overflow: visible !important; -webkit-print-colo
 }
 
 #impress div { -webkit-transform: none !important; -moz-transform: none !important;}
+*/
+
