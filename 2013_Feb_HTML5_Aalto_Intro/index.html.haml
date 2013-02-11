@@ -1,0 +1,438 @@
+!!! 5
+%html
+  %head
+    %meta(charset="utf-8")
+    %meta(content="IE=edge,chrome=1" http-equiv="X-UA-Compatible")
+    %meta(name="viewport" content="width=1024")
+    %meta(name="apple-mobile-web-app-capable" content="yes")
+    %meta(name="description" content="HTML5 Talk")
+    %meta(name="author" content="Claudio Riva") 
+
+    %link(href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,700italic,300,400,800" rel="stylesheet" type="text/css")
+    %link(href="css/impress-demo.css" rel="stylesheet")
+    %link(rel="apple-touch-icon" href="apple-touch-icon.png")
+    %title
+      HTML5
+    
+  %body(class="impress-not-supported")
+    .fallback-message
+      %p 
+        Your browser 
+        %b
+          doesn't support the features required
+        by impress.js, so you are presented with a simplified version of this presentation.
+      %p 
+        For the best experience please use the latest Chrome Safari or Firefox browser.
+    
+    #impress
+      #frontpage.step(data-x="-3000" data-y="-3500" data-scale="2")
+        %h1.uppercase HTML5 and 
+        %h1.uppercase The Mobile Web Revolution
+        %p Claudio Riva
+      
+      #webdead.step(data-x="-100" data-y="-3500" data-scale="1")
+        %h1.uppercase
+          Nobody 
+          %br
+          told 
+          %br 
+          you ?
+          %br
+          %br
+          %br
+      
+      .step(data-x="-100" data-y="-4500" data-rotate="-90" data-scale=".5")
+        %a(href="http://www.asymco.com/2013/01/08/app-store-download-rate-forecast/")
+          %img(src="imgs/asymco-appstore-dw-rate.png" width='900')
+
+      .step(data-x="-100" data-y="-5600" data-rotate="-90" data-scale="1.5")
+        %h1 
+          %strong.big 1.2 billion 
+        %h1 
+          active 
+          %strong mobile 
+          Web users 
+          in 2011
+      #onlymobile.step(data-x="0" data-y="-5530" data-rotate="-90" data-scale=".8")
+        20-25% Web users are
+        %b only
+        mobile
+        
+      .step(data-x="-100" data-y="-6400" data-rotate="-90" data-scale=".5")
+        %img(src="imgs/StatCounter-mobile_vs_desktop-IN.png" width='1000')
+
+      .step(data-x="1200" data-y="-5000" data-scale="1")
+        %strong.big Apps
+        vs
+        %strong.big Web
+      
+      #webdefects.step(data-x="1150" data-y="-4870" data-scale=".5")
+        %br 
+        %p
+          Building 
+          %em good 
+          web apps is not easy
+
+        %p Performance was/is (sometimes) not enough
+
+        %p Browser support (on mobile) is fragmented
+
+        %p Web is evolving fast
+      
+      #markquote.step(data-x="1200" data-y="-3500" data-scale="1")
+        %p
+          %br
+          %strong I think the biggest mistake we made as a company is betting too much on HTML5 as opposed to native.
+          %br
+          Mark Zuckerberg, Facebook CEO
+
+      #fberrors.step(data-x="1358" data-y="-3210" data-scale="0.01")
+        %p No client-side rendering
+        %p No templating
+        %p No local storage of data
+        %p No tolerance for high-latency
+        %p No JSON API
+        %p No mobile optimization
+
+      #wycatsquote.step(data-x="1358" data-y="-2800" data-scale=".1")
+        %h1 He still claimed their biggest mistake was betting on HTML5 when their real biggest mistake was incompetent execution
+        %p Yehuda Katz
+              
+      #webevolution.step(data-x="-100" data-y="-1800" data-z="000" data-scale="1.7")
+      
+      #webevolution-1.step(data-x="-500" data-y="-1800" data-z="00" data-scale="1.2")
+      
+      #webevolution-2.step(data-x="500" data-y="-1800" data-z="000" data-scale="1.2")
+
+      #whatisHTML5.step(data-x="0" data-y="-500" data-scale="3")
+        %span.try 
+          So, what is
+        %h1 
+          HTML version 5 ?
+
+      .step.html5history(data-x="100" data-y="150" data-scale="1.4")
+        
+        %p 1998 - W3C decided they will stop evolving HTML beyond version 4.01 
+        %p 1999 - HTML 4.01 becomes a recommendation
+        %p 2000 - W3C released XHTML 1.0 and force the world to use XML
+        %p 2002 - W3C released first draft of XHTML 2.0, no backwards compatibility
+        %p 
+          2004 - WHATWG started working on 
+          %b HTML v5  
+          (Opera, Mozilla and Apple)
+        %p 2006 - W3C agrees to use WHATWG proposal for HTML5
+        %p 2009 - W3C stops works on XHTML 2.0 and resources are diverted to HTML5
+        %p 2012 - HTML5 gets forked up
+        %p 
+          2014 - 
+          %b HTML 5.0 
+          will become a recommendation (according to W3C)
+        %p 
+          2016 - W3C 
+          %a(href="http://dev.w3.org/html5/decision-policy/html5-2014-plan.html") plans 
+          to release 
+          %b HTML 5.1
+        
+
+      #philosophyofHTML5.step(data-x="-1800" data-y="100" data-rotate="90" data-scale="1.4")
+        %h1 Philosophy of HTML v5
+        %p Specify undocumented features (e.g. XMLHttpRequest)
+        %p Browser behaviour with invalid markup
+        %p Support web applications
+        %p Define an open standard (opposed to Flash)
+        %p Don't break the Web
+
+      .step(data-x="-2500" data-y="-600" data-rotate="90" data-rotate-x="0" data-rotate-y="-60"  data-scale="1")
+        %a(href="http://www.whatwg.org/specs/web-apps/current-work/multipage/")
+          %img(src="imgs/html5-whatwg.png")
+        
+      .step(data-x="-2500" data-y="400" data-rotate="90" data-rotate-x="0" data-rotate-y="-60" data-scale="0.9")
+        %a(href="http://www.w3.org/standards/webdesign/")
+          %img(src="imgs/html5-w3c.png")
+
+      #semantics.step.new_html5(data-x="-2700" data-y="-400" data-z="-750" data-rotate="90" data-rotate-x="0" data-rotate-y="-60"  data-scale="1")
+        %b New Tags
+        %p section, header, footer, nav, ...
+        %br
+
+        %b New Form Controls & Types
+        %p date, range, email, url, tel, ...
+        %br
+
+        %b New Form Validation
+        %p by type, required, :valid, :invalid, :required
+      
+      #offline_storage.step.new_html5(data-x="-2900" data-y="-200" data-z="-1500" data-rotate="90" data-rotate-x="0" data-rotate-y="-60"  data-scale="1")
+        %b Offline Usage
+        %p Install a package on the device
+        %p online/offline events
+        %br
+      
+        %b Storage
+        %p Persistent and Session Storage
+        %p key/value (strings)
+        %p IndexDB and SQL storage
+
+      #multimedia.step.new_html5(data-x="-3100" data-y="0" data-z="-2100" data-rotate="90" data-rotate-x="0" data-rotate-y="-60"  data-scale="1")
+        %b Multimedia
+        %p Audio and Video Tags
+        %p Javascript API & events
+        %p Some codecs supported
+        
+      #effects_3d.step.new_html5(data-x="-3300" data-y="200" data-z="-2600" data-rotate="90" data-rotate-x="0" data-rotate-y="-60"  data-scale="1")
+        %b 3D, Graphics and Effects
+        %p 2D Canvas API
+        %P SVG support
+        %p WebGL
+
+      #device_access.step.new_html5(data-x="-3500" data-y="400" data-z="-3200" data-rotate="90" data-rotate-x="0" data-rotate-y="-60"  data-scale="1")
+        %b Device Access
+        %p Accelerometer / gyroscope / magnetometer
+        %p Orientation change
+        %p Touch events (touchstart, touchmove, touchend)
+        %p File API and File Reader
+        %p Media Capture API
+        
+      #styling.step.new_html5(data-x="-3700" data-y="600" data-z="-4000" data-rotate="90" data-rotate-x="0" data-rotate-y="-60"  data-scale="1")
+        %b CSS New Styling
+        %p &nbsp; &nbsp; Rounded borders, shadows, opacity
+        %br
+        %b CSS 2D & 3D transforms
+        %p &nbsp; &nbsp; rotate, scale, skew, translate
+        %br
+        %b CSS Transitions
+        %p &nbsp; &nbsp; basic animations between 2 states
+        %p &nbsp; &nbsp; keyframe animations
+
+      #connectivity.step.new_html5(data-x="-3900" data-y="800" data-z="-4500" data-rotate="90" data-rotate-x="0" data-rotate-y="-60"  data-scale="1")
+        %b Communication
+        %p Web Sockets
+        %p Server-sent Events
+        
+      #performance.step.new_html5(data-x="-4100" data-y="1000" data-z="-5000" data-rotate="90" data-rotate-x="0" data-rotate-y="-60"  data-scale="1")
+        %b Performance & Optimization
+        %p Notifications API
+        %p XMLHttpRequest 2
+        %p Web Workers
+      
+      .step(data-x="-4100" data-y="1700" data-z="-2000" data-rotate="0" data-rotate-x="0" data-rotate-y="-60"  data-scale="1")
+        Does this stuff actually work ? 
+      
+      .step(data-x="-2500" data-y="1600" data-rotate="90" data-rotate-x="0" data-rotate-y="-60" data-scale="0.9")
+        %a(href="http://www.cuttherope.ie")
+          %img(src="imgs/cut-the-rope.png")
+      
+      .question.step(data-x="850" data-y="2500" data-rotate="90" data-scale="2")    
+        What about 
+        %h1 mobile HTML5 ?
+
+      .question.step(data-x="2000" data-y="2500" data-rotate="-90" data-rotate-y="0" data-scale="2")    
+        What's the 
+        %h1 HTML5 promise 
+        for 
+        %b.rotating mobile 
+        development ? 
+    
+      #smartphones-platforms.step(data-x="3000" data-y="3600" data-rotate="-90" data-rotate-y="0" data-scale="0.5")
+        Mobile Platforms
+      
+      #smartphones-platform-shares.step(data-x="3000" data-y="3000"  data-rotate="-90" data-rotate-y="0" data-scale="0.5")
+        Smartphone Platforms Shares
+      #smartphones-languages-shares.step(data-x="3000" data-y="2500"  data-rotate="-90" data-rotate-y="0" data-scale="0.5")
+        Smartphone Languages Shares
+      #smartphones-browser-shares.step(data-x="3000" data-y="2000"  data-rotate="-90" data-rotate-y="0" data-scale="0.5")
+        Smartphone Browser Shares
+      #smartphones-html5-shares.step(data-x="3000" data-y="1500"  data-rotate="-90" data-rotate-y="0" data-scale="0.5")
+        Smartphone HTML5 Shares
+
+      .step(data-x="3700" data-y="3000" data-rotate="-90"  data-rotate-y="0" data-scale="0.5")
+        %a(href="http://caniuse.com")
+          %img(src="imgs/caniuse.png")
+
+      .step(data-x="3700" data-y="2000" data-rotate="-90"  data-rotate-y="0" data-scale="0.5")
+        %a(href="http://mobilehtml5.org/" )
+          %img(src="imgs/mobile-html5-comp-table.png")
+
+      .step(data-x="3700" data-y="1000" data-rotate="-90"  data-rotate-y="0" data-scale="0.5")
+        %a(href="http://rng.io/" )
+          %img(src="imgs/ringmark.png")
+
+
+      .step(data-x="4200" data-y="2500" data-z="1000" data-rotate="-90"  data-rotate-y="60" data-scale="1")
+        %img(src="imgs/ft.png")
+
+      .step(data-x="4200" data-y="1500" data-z="1000" data-rotate="-90"  data-rotate-y="60" data-scale="1")
+        %img(src="imgs/linkedin.png")
+
+      .step(data-x="4200" data-y="500" data-z="1000" data-rotate="-90"  data-rotate-y="60" data-scale="1")
+        %img(src="imgs/nokiamaps-ipad.png")
+
+      .step(data-x="4700" data-y="500" data-z="500" data-rotate="-90"  data-rotate-y="65" data-scale="1")
+        %img(src="imgs/nokiamaps-iphone.png")
+
+      .step(data-x="5200" data-y="500" data-z="000" data-rotate="-90"  data-rotate-y="70" data-scale="1")
+        %img(src="imgs/nokiamaps-n9.png")
+
+      .step(data-x="5700" data-y="500" data-z="-500" data-rotate="-90"  data-rotate-y="75" data-scale="1")
+        %img(src="imgs/nokiamaps-htc.png")
+
+      .step(data-x="6200" data-y="500" data-z="-1000" data-rotate="-90"  data-rotate-y="80" data-scale="1")
+        %a(href="http://www.verkkokauppa.com/fi/product/43824/ddgvv/Samsung-Galaxy-Y-S5360-Android-puhelin-valkoinen")
+          %img(src="imgs/nokiamaps-samsung.png")
+
+      .step.question(data-x="2600" data-y="-3100" data-z="000" data-scale="1")
+        How do we build  
+        %h1 Web Apps   
+        with 
+        %b HTML5 ?
+        
+      .step(data-x="2600" data-y="-2500" data-z="000" data-scale="1")
+        %b Types of Web Apps:
+        %p
+          Hosted Web App (
+          %a(href="http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html") Cache Manifest
+          \)
+        %p
+          Tizen (
+          %a(href="http://www.w3.org/TR/widgets/") W3C Widget
+          \)
+        %p
+          Firefox OS (
+          %a(href="https://marketplace.firefox.com/developers/docs/packaged_apps") Open Web App
+          \)
+        %p
+          PhoneGap
+        
+      .step(data-x="2600" data-y="-1800" data-z="000" data-scale="1")
+        %img(src="imgs/web-arch-classic.png")
+
+      .step(data-x="4000" data-y="-1800" data-z="000" data-scale="1")
+        %img(src="imgs/web-arch-new.png")
+
+      #html5arch.step(data-x="6350" data-y="-1900" data-z="000" data-scale="1.4")
+
+      #html5arch-1.step(data-x="6000" data-y="-2000" data-z="00" data-scale="0.9")
+
+      #html5arch-2.step(data-x="6000" data-y="-1780" data-z="000" data-scale="0.9")
+
+      #html5arch-3.step(data-x="6700" data-y="-1880" data-z="000" data-scale="1")
+
+
+      #jquerycode.step(data-x="2600" data-y="-400" data-z="000" data-scale=".5")
+        %img(src="imgs/jquery-code.png")
+
+      .step(data-x="3200" data-y="-400" data-z="000" data-scale=".5")
+        %img(src="imgs/jQuerySimple-iphone.png")
+      .step(data-x="3500" data-y="-400" data-z="000" data-scale=".5")
+        %img(src="imgs/jQuerySimple-ipad.png")
+
+      .step(data-x="3200" data-y="00" data-z="000" data-scale=".5")
+        Is it really that 
+        %b easy 
+        ?
+
+
+      .step(data-x="7200" data-y="-200" data-z="000" data-rotate="-90" data-scale="1")
+        %b.rotating Web Browsers
+        %br
+        %br
+        %p Too many
+        %p Some are limited
+        %p Some are too innovative
+        %p Some are proxy based
+        %p Little debugging support 
+        %p Various input methods (focus, cursor, touch, multi-touch)
+        %p API support
+
+      .step(data-x="8900" data-y="-1000" data-z="000" data-rotate="-45" data-scale="3")
+        %b Adaptation 
+        %br 
+        %br 
+        %b Optimization
+
+      .step(data-x="10000" data-y="-2100" data-z="000" data-rotate="-45" data-scale="2")
+        %b Responsive Design 
+        %br 
+        %br 
+        %b Server-side Detection
+
+      #smalldevice.step(data-x="11000" data-y="-3000" data-z="000" data-rotate="-45" data-scale=".1")
+        %b Nokia 113
+        %br  
+        %p 128 x 160 pixels
+        %p 1.8 inches display (114 ppi)
+        %p 33€
+        %p Proxy Browser
+
+      #bigdevice.step(data-x="11300" data-y="-3600" data-z="000" data-rotate="-45" data-scale="1")
+        %b Google Nexus 10
+        %br  
+        %p 2560 x 1600 pixels
+        %p 10.1 inches display (299 ppi)
+        %p 999,90€
+        %p Various browsers
+
+      .step(data-x="10200" data-y="-700" data-z="000" data-rotate="0" data-scale="1.8")
+        %b Mobile usability 
+        %br
+        %b Content Parity 
+
+      .step(data-x="10200" data-y="200" data-z="000" data-rotate="90" data-scale="1.5")
+        %b Touch vs Click
+
+      .step(data-x="9600" data-y="300" data-z="000" data-rotate="180" data-scale="1")
+        %p
+          %b Viewport
+        %p 
+          %b Full screen
+        %p 
+          %b Pixel density
+        %p
+          %b Data URI - inlining content
+      
+
+      .step(data-x="9500" data-y="-300" data-z="000" data-rotate="270" data-scale="0.6")
+        %b Hybrid Apps
+
+      #spinner.step(data-x="9900" data-y="-200" data-z="000" data-rotate="360" data-scale="0.9")
+        %img(src="imgs/spinner.gif")
+
+      #webslow.step(data-x="9200" data-y="800" data-z="000" data-rotate="360" data-scale="2")
+        Mobile web is 
+        %b slow
+        
+      #weboptim.step(data-x="9000" data-y="1100" data-z="000" data-rotate="360" data-scale="1")
+        %b Performance Optimization
+        %br
+        %p No redirect
+        %p Semantic html5
+        %p Leverage CSS
+        %p Inline images
+        %p Reduce HTTP requests
+         
+      .step(data-x="9500" data-y="2500" data-rotate="-45" data-scale="2")
+        %p
+          %b Web Development is fun
+        %br
+        %br
+        %br
+
+      #thankyou.step(data-x="3000" data-y="6000" data-z="1800" data-rotate="720" data-rotate-x="-65" data-rotate-y="0" data-scale="2")
+        %p Thank You
+        
+        
+      #overview.step(data-x="2800" data-y="600" data-scale="10")
+        .hint
+          %p Use a spacebar or arrow keys to navigate
+
+    :javascript
+      if ("ontouchstart" in document.documentElement) { 
+          document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+      }
+    %script(src="js/impress.js")
+    :javascript 
+      impress().init();
+  
+  
+  
+    
