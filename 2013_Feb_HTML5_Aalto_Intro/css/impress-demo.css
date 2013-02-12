@@ -563,6 +563,11 @@ text-transform: uppercase;
 	background-size: 1200px;
 }
 
+#W3CApp {
+	padding-left: -100px;
+	width: 1200px;
+}
+
 #smalldevice {
 	width: 1200px;
     background-image: url('../imgs/nokia-113.jpg');	
